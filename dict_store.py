@@ -1,16 +1,11 @@
 # Write your code here!
 
-dict = {}
 def temp_and_color(dict):
-    if "temp" not in dict:
-        print("None")
-    else:
-        print(dict["temp"])
+    temp = dict.get("temp")
+    color = dict.get("color")
+    return temp, color
+print(temp_and_color)
 
-    if "color" not in dict:
-        print("None")
-    else:
-        print(dict["color"])
-    return temp_and_color
-
-print(tuple(temp_and_color))
+dict = {}
+result = temp_and_color(dict)
+print(result)
