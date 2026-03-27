@@ -1,9 +1,9 @@
 # Write your code here!
 
 def employee_print(employee_info):
-    name = employee_info.get("name", "N/A")
-    salary = employee_info.get("salary", "N/A")
-    role = employee_info.get("role", "N/A")
+    name = employee_info.get("Name", "N/A")
+    salary = employee_info.get("Salary", "N/A")
+    role = employee_info.get("Role", "N/A")
 
 
     print(f"""Name: {name}
@@ -11,7 +11,7 @@ def employee_print(employee_info):
     Role: {role}""")
     
     other = employee_info.copy()
-    for key in ["name", "salary", "role"]:
+    for key in ["Name", "Salary", "Role"]:
         if key in other:
             other.pop(key)
         
