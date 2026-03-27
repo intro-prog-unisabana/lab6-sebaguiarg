@@ -16,7 +16,7 @@ def employee_print(employee_info):
             other.pop(key)
         
     if not other:
-        print("No other info!")
+        print("'No other info!'")
     else:
         for key, value in other.items():
             print(f"{key}: {value}")
