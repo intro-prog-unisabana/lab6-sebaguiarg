@@ -7,8 +7,8 @@ def employee_print(employee_info):
 
 
     print(f"""Name: {name}
-        Salary: {salary}
-        Role: {role}""")
+    Salary: {salary}
+    Role: {role}""")
     
     other = employee_info.copy()
     for key in ["name", "salary", "role"]:
@@ -19,7 +19,7 @@ def employee_print(employee_info):
         print("No other info!")
     else:
         for key, value in other.items():
-            print(f"{key}, {value}")
+            print(f"{key}: {value}")
 
 employee_info = {}
 employee_print(employee_info)
